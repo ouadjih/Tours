@@ -1,0 +1,73 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.under-line {
+  position: relative;
+  left: 2em;
+  top: -1em;
+  width: 3em;
+  border: 2px solid rgb(52, 173, 249);
+}
+.tour {
+  width: 600px;
+  border-radius: 8px;
+  margin: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+  position: relative;
+  top: 0em;
+  left: 0em;
+  width: 600px;
+  max-height: 400px;
+  border-radius: 8px 8px 0 0;
+}
+.np {
+  position: relative;
+  top: 1em;
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  position: relative;
+  left: 1.2em;
+  font-weight: bold;
+}
+.price {
+  position: absolute;
+  right: 1.5em;
+  font-weight: 600;
+  color: rgb(45, 137, 242);
+}
+.info {
+  position: relative;
+  top: 1em;
+  margin: 1em 1.2em;
+  width: 560px;
+
+  color: rgb(88, 88, 91);
+}
+.btn {
+  position: relative;
+  left: 15em;
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 35px;
+  margin: 2em;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+span{
+  
+  color: rgb(91, 156, 255);
+  cursor: pointer;
+}
