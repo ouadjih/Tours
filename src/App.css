@@ -1,0 +1,15 @@
+main{
+ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.refresh{
+    border: none;
+    border-radius: .3em;
+    background-color: aquamarine;
+    color: white;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Tours.css";
 export default function Tours(props) {
   const [readMore,setReadMore]= useState(false)
-
   function ToggleReadMore(){
     setReadMore(prev => !readMore)
   }
@@ -14,7 +13,7 @@ export default function Tours(props) {
       </div>
       <div className="tours">
         {props.tours.map((t) => (
-          <div className="tour">
+          <div key ={t.id} className="tour">
             <img src={t.image} className="image" alt="tour" />
             <div className="np">
               <div className="name">{t.name}</div>
@@ -24,7 +23,7 @@ export default function Tours(props) {
             `${t.info.substring(0,200)}...`
             } <span onClick={ToggleReadMore}>{readMore?'Show less':'Read More'}</span>
             </div>
-            <button className="btn">Not Intrested</button>
+            <button className="btn" onClick={()=>props.removeTour(t.id)}>Not Intrested</button>
           </div>
         ))}
       </div>
